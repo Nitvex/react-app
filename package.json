@@ -31,6 +31,7 @@
     "@babel/cli": "^7.8.4",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-stage-2": "^7.8.3",
+    "axios": "^0.19.2",
     "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
     "ejs": "^3.0.2",
