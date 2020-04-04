@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest --watch",
-    "dev": "pm2 start lib/server.js --watch --interpreter @babel/node",
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
     "webpack": "webpack -wd",
     "server": "babel-node ./lib/server.js",
     "back": "pm2 start --name server npm -- run server",
@@ -17,6 +17,9 @@
   "author": "Nitvex",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
@@ -26,10 +29,7 @@
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.9.4",
     "@babel/preset-stage-2": "^7.8.3",
     "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
