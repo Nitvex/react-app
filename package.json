@@ -7,9 +7,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
-    "webpack": "webpack -wd"
+    "test": "jest --watch",
+    "dev": "pm2 start lib/server.js --watch --interpreter @babel/node",
+    "webpack": "webpack -wd",
+    "server": "babel-node ./lib/server.js",
+    "back": "pm2 start --name server npm -- run server",
+    "all": "npm -- run back && npm -- run webpack"
   },
   "author": "Nitvex",
   "license": "ISC",
