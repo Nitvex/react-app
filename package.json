@@ -37,7 +37,7 @@
     "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
     "ejs": "^3.0.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "lodash.debounce": "^4.0.8",
     "lodash.pickby": "^4.6.0",
     "pm2": "^4.2.3",
